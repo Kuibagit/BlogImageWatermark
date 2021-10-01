@@ -60,8 +60,8 @@ def watermarks(post_name):
 
 
 if __name__ == '__main__':
-    print("\n[*] Compositing please wait...")
     if len(sys.argv) == 2:
+        print("\n[*] Compositing please wait...")
         get_folder(fpath=r"./sourceimg/image/", wm_file=r"./resources/blogo.png", save_path=r"./sourceimg/image/")
         watermarks(sys.argv[1])
         print('[+] add logo success!')
